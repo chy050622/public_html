@@ -1,2 +1,521 @@
-강동준 바보
-최하영 천재
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="경영학과 3학년 최하영의 자기소개, 활동 기록, 그리고 취향을 담은 아기자기한 다이어리 공간 최하영.zip">
+  <meta name="author" content="최하영">
+  <title>최하영.zip — 개인 웹사이트</title>
+
+  <!-- 웹폰트: Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 키보드 사용자를 위한 스킵 내비게이션 -->
+  <a href="#main-content" class="skip-link">본문 바로가기</a>
+
+  <!-- 상단 네비게이션 헤더 -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#home" class="logo" aria-label="최하영.zip 홈으로 이동">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/>
+            <circle cx="12" cy="13" r="2"/>
+          </svg>
+        </span>
+        <span class="logo-text">최하영<span class="logo-ext">.zip</span></span>
+      </a>
+
+      <!-- 모바일 햄버거 메뉴 버튼 -->
+      <button 
+        type="button" 
+        class="nav-toggle" 
+        id="nav-toggle" 
+        aria-label="메뉴 열기" 
+        aria-controls="primary-nav" 
+        aria-expanded="false"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- 주 내비게이션 -->
+      <nav id="primary-nav" class="site-nav" aria-label="주 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">홈</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">소개</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">포트폴리오</a></li>
+          <li class="nav-item"><a href="#tastes" class="nav-link">취향</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main id="main-content">
+    
+    <!-- 1. 홈 (Hero) 섹션 -->
+    <section id="home" class="section hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <!-- 홈 텍스트 콘텐츠 -->
+        <div class="hero-content">
+          <div class="diary-sticker-label" aria-hidden="true">
+            <span class="sparkle-icon">✨</span> 하영이의 다이어리
+          </div>
+          
+          <h1 id="hero-title" class="hero-title">
+            최하영<span class="highlight">.zip</span>
+          </h1>
+          
+          <p class="hero-description" id="hero-desc">
+            안녕하세요. 경영학과 3학년 최하영입니다.<br class="pc-only">
+            저의 이야기와 좋아하는 것들을 모았습니다.
+          </p>
+
+          <!-- 태그 칩 -->
+          <ul class="tag-list" aria-label="하영의 핵심 키워드">
+            <li class="tag-item">#경영학과</li>
+            <li class="tag-item">#3학년</li>
+            <li class="tag-item">#ISFP</li>
+          </ul>
+
+          <!-- CTA 버튼 그룹 -->
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">소개 보기</a>
+            <a href="#tastes" class="btn btn-secondary">취향 둘러보기</a>
+          </div>
+        </div>
+
+        <!-- 캐릭터 일러스트 & 다이어리 프레임 -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <!-- 마스킹 테이프 장식 -->
+            <div class="masking-tape top-center" aria-hidden="true"></div>
+            
+            <div class="avatar-wrapper">
+              <img 
+                src="assets/avatar.svg" 
+                alt="단정한 니트를 입고 밝게 미소 짓는 최하영의 귀여운 캐릭터 일러스트" 
+                width="280" 
+                height="280" 
+                class="avatar-image"
+              >
+            </div>
+            
+            <div class="avatar-badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              <span class="badge-text">Welcome to my space!</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. 소개 (About) 섹션 -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" aria-hidden="true">ABOUT ME</span>
+          <h2 id="about-title" class="section-title">저를 소개합니다</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- 프로필 기본 정보 카드 -->
+          <div class="diary-card profile-card">
+            <div class="card-deco-pin" aria-hidden="true">📌</div>
+            <h3 class="card-heading">프로필 정보</h3>
+            <p class="about-body-text" id="about-intro-text">
+              옷 구경과 노래 감상, OTT 보기를 좋아합니다. 미니멀한 스타일에 포인트를 더하는 것을 좋아하며, 파스텔톤과 무채색을 선호합니다.
+            </p>
+
+            <div class="profile-details-list">
+              <div class="profile-detail-item">
+                <span class="detail-label">이름</span>
+                <span class="detail-value">최하영</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">소속</span>
+                <span class="detail-value">경영학과 3학년</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">전공</span>
+                <span class="detail-value">경영학</span>
+              </div>
+              <div class="profile-detail-item">
+                <span class="detail-label">MBTI</span>
+                <span class="detail-value mbti-pill">ISFP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 성격 메모 (장점 / 단점 다이어리 메모지) -->
+          <div class="diary-card memo-card">
+            <div class="masking-tape top-left" aria-hidden="true"></div>
+            <h3 class="card-heading">성격 메모</h3>
+            <p class="memo-subtext">스스로 돌아본 저의 특징입니다.</p>
+
+            <div class="memo-items">
+              <div class="memo-bubble advantage">
+                <div class="bubble-header">
+                  <span class="bubble-icon" aria-hidden="true">🌱</span>
+                  <strong class="bubble-title">장점</strong>
+                </div>
+                <p class="bubble-content">인사를 잘합니다.</p>
+              </div>
+
+              <div class="memo-bubble disadvantage">
+                <div class="bubble-header">
+                  <span class="bubble-icon" aria-hidden="true">⚡</span>
+                  <strong class="bubble-title">단점</strong>
+                </div>
+                <p class="bubble-content">화가 많은 편입니다.</p>
+              </div>
+            </div>
+
+            <div class="memo-footer-deco" aria-hidden="true">
+              <span class="deco-star">✦</span>
+              <span class="deco-line"></span>
+              <span class="deco-star">✦</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. 포트폴리오 (Portfolio) 섹션 -->
+    <section id="portfolio" class="section portfolio-section" aria-labelledby="portfolio-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" aria-hidden="true">ACTIVITIES</span>
+          <h2 id="portfolio-title" class="section-title">저의 활동 기록</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subdesc">
+            과제 및 대외활동 자료를 순차적으로 기록할 예정입니다.
+          </p>
+        </div>
+
+        <!-- 포트폴리오 카드 그리드 (3개) -->
+        <div class="portfolio-grid" id="portfolio-list">
+          <!-- JS를 통해 content.js의 데이터를 바탕으로 렌더링되거나 fallback 기본 마크업 제공 -->
+          
+          <!-- 1) 수업 과제 -->
+          <article class="portfolio-card diary-card" data-id="coursework">
+            <div class="portfolio-card-header">
+              <span class="badge badge-prep">준비 중</span>
+              <span class="category-tag">경영학 과제</span>
+            </div>
+            <div class="folder-illustration" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#71548F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/>
+              </svg>
+            </div>
+            <h3 class="portfolio-title">수업 과제</h3>
+            <p class="portfolio-desc">활동 내용을 정리하고 있습니다.</p>
+            <div class="portfolio-status-notice">
+              <span class="status-indicator" aria-hidden="true"></span>
+              <span>자료 업데이트 예정</span>
+            </div>
+          </article>
+
+          <!-- 2) 팀 프로젝트 -->
+          <article class="portfolio-card diary-card" data-id="team-project">
+            <div class="portfolio-card-header">
+              <span class="badge badge-prep">준비 중</span>
+              <span class="category-tag">팀 프로젝트</span>
+            </div>
+            <div class="folder-illustration" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#71548F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="portfolio-title">팀 프로젝트</h3>
+            <p class="portfolio-desc">활동 내용을 정리하고 있습니다.</p>
+            <div class="portfolio-status-notice">
+              <span class="status-indicator" aria-hidden="true"></span>
+              <span>자료 업데이트 예정</span>
+            </div>
+          </article>
+
+          <!-- 3) 학생회·교내 활동 -->
+          <article class="portfolio-card diary-card" data-id="student-council">
+            <div class="portfolio-card-header">
+              <span class="badge badge-prep">준비 중</span>
+              <span class="category-tag">교내 활동</span>
+            </div>
+            <div class="folder-illustration" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#71548F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="portfolio-title">학생회·교내 활동</h3>
+            <p class="portfolio-desc">활동 내용을 정리하고 있습니다.</p>
+            <div class="portfolio-status-notice">
+              <span class="status-indicator" aria-hidden="true"></span>
+              <span>자료 업데이트 예정</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. 취향 (Tastes) 섹션 -->
+    <section id="tastes" class="section tastes-section" aria-labelledby="tastes-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" aria-hidden="true">FAVORITES</span>
+          <h2 id="tastes-title" class="section-title">좋아하는 것들</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subdesc">
+            제가 일상에서 좋아하는 패션, 음악, OTT 취향을 기록했습니다.
+          </p>
+        </div>
+
+        <!-- 탭 네비게이션 (WAI-ARIA 지원) -->
+        <div class="tabs-container">
+          <div class="tab-list" role="tablist" aria-label="취향 카테고리 탭">
+            <button 
+              type="button" 
+              role="tab" 
+              class="tab-btn active" 
+              id="tab-fashion" 
+              aria-selected="true" 
+              aria-controls="panel-fashion"
+              tabindex="0"
+            >
+              <span class="tab-icon" aria-hidden="true">👗</span> 패션
+            </button>
+            <button 
+              type="button" 
+              role="tab" 
+              class="tab-btn" 
+              id="tab-music" 
+              aria-selected="false" 
+              aria-controls="panel-music"
+              tabindex="-1"
+            >
+              <span class="tab-icon" aria-hidden="true">🎵</span> 음악
+            </button>
+            <button 
+              type="button" 
+              role="tab" 
+              class="tab-btn" 
+              id="tab-ott" 
+              aria-selected="false" 
+              aria-controls="panel-ott"
+              tabindex="-1"
+            >
+              <span class="tab-icon" aria-hidden="true">📺</span> OTT
+            </button>
+          </div>
+
+          <!-- 탭 패널 1: 패션 -->
+          <div 
+            role="tabpanel" 
+            id="panel-fashion" 
+            aria-labelledby="tab-fashion" 
+            class="tab-panel active"
+          >
+            <div class="taste-card diary-card">
+              <div class="taste-card-main">
+                <div class="taste-visual fashion-visual" aria-hidden="true">
+                  <!-- 귀여운 옷/옷걸이 SVG 아이콘 -->
+                  <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#71548F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3c0 .77.34 1.46.88 1.95L3 11v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9l-6.88-4.05A2.99 2.99 0 0 0 15 5a3 3 0 0 0-3-3Z"/>
+                    <path d="m9 11 3 3 3-3"/>
+                  </svg>
+                </div>
+
+                <div class="taste-info">
+                  <div class="taste-category-badge">Fashion Style</div>
+                  <h3 class="taste-title">미니멀 속 작은 포인트</h3>
+                  <p class="taste-description">
+                    파스텔톤과 무채색을 선호합니다.
+                  </p>
+
+                  <div class="taste-tags-wrap">
+                    <span class="taste-tag">#미니멀</span>
+                    <span class="taste-tag">#포인트</span>
+                    <span class="taste-tag">#파스텔톤</span>
+                    <span class="taste-tag">#무채색</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 컬러 칩 섹션 -->
+              <div class="color-palette-box">
+                <h4 class="palette-title">선호하는 컬러 팔레트</h4>
+                <div class="color-chips-row" role="list" aria-label="선호하는 색상 목록">
+                  <div class="color-chip" role="listitem" style="background-color: #E9DDF8;" title="연보라 (#E9DDF8)">
+                    <span class="chip-name">연보라</span>
+                    <span class="chip-hex">#E9DDF8</span>
+                  </div>
+                  <div class="color-chip" role="listitem" style="background-color: #F8DFEC;" title="연분홍 (#F8DFEC)">
+                    <span class="chip-name">연분홍</span>
+                    <span class="chip-hex">#F8DFEC</span>
+                  </div>
+                  <div class="color-chip bordered" role="listitem" style="background-color: #FFFFFF;" title="화이트 (#FFFFFF)">
+                    <span class="chip-name">화이트</span>
+                    <span class="chip-hex">#FFFFFF</span>
+                  </div>
+                  <div class="color-chip" role="listitem" style="background-color: #DCD1E8;" title="뮤트 그레이 (#DCD1E8)">
+                    <span class="chip-name">뮤트 그레이</span>
+                    <span class="chip-hex">#DCD1E8</span>
+                  </div>
+                  <div class="color-chip dark" role="listitem" style="background-color: #342D40; color: #FFFFFF;" title="딥 차콜 (#342D40)">
+                    <span class="chip-name" style="color:#FFF;">딥 차콜</span>
+                    <span class="chip-hex" style="color:#DCD1E8;">#342D40</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 탭 패널 2: 음악 -->
+          <div 
+            role="tabpanel" 
+            id="panel-music" 
+            aria-labelledby="tab-music" 
+            class="tab-panel" 
+            hidden
+          >
+            <div class="taste-card diary-card music-card">
+              <div class="taste-card-main">
+                <div class="taste-visual music-visual" aria-hidden="true">
+                  <!-- LP 레코드 / 헤드폰 SVG 아이콘 -->
+                  <div class="cd-vinyl">
+                    <div class="cd-center"></div>
+                  </div>
+                </div>
+
+                <div class="taste-info">
+                  <div class="taste-category-badge">Favorite Music</div>
+                  <h3 class="taste-title">NEON</h3>
+                  <div class="music-artist-name">A2O LITE</div>
+                  <p class="taste-description">
+                    A2O LITE
+                  </p>
+                  <p class="taste-extra-note">
+                    사용자가 즐겨 듣는 음악으로 선택한 곡입니다.
+                  </p>
+
+                  <!-- 공식 뮤직비디오 링크 버튼 (검증된 공식 채널 URL) -->
+                  <div class="taste-actions">
+                    <a 
+                      href="https://www.youtube.com/watch?v=D968qfUZMUE" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-primary video-link-btn"
+                      aria-label="A2O LITE - NEON 공식 뮤직비디오 보기 (새 창에서 열림)"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                      </svg>
+                      공식 뮤직비디오 보기
+                      <span class="sr-only">(새 창에서 열림)</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 탭 패널 3: OTT -->
+          <div 
+            role="tabpanel" 
+            id="panel-ott" 
+            aria-labelledby="tab-ott" 
+            class="tab-panel" 
+            hidden
+          >
+            <div class="taste-card diary-card ott-card">
+              <div class="taste-card-main">
+                <div class="taste-visual ott-visual" aria-hidden="true">
+                  <!-- TV / 리모콘 SVG 아이콘 -->
+                  <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#71548F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="15" x="2" y="7" rx="2" ry="2"/>
+                    <polyline points="17 2 12 7 7 2"/>
+                  </svg>
+                </div>
+
+                <div class="taste-info">
+                  <div class="taste-category-badge">Favorite Show</div>
+                  <h3 class="taste-title">런닝맨</h3>
+                  <div class="ott-genre-tag">예능</div>
+                  <p class="taste-description">
+                    즐겨 보는 예능
+                  </p>
+                  <p class="taste-extra-note">
+                    주말과 여가 시간에 즐겨 보는 대표 예능 프로그램입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 상세 보기 모달 다이얼로그 (향후 활동 데이터 상세 열람용 구조) -->
+  <div 
+    id="portfolio-modal" 
+    class="modal-backdrop" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-hidden="true" 
+    aria-labelledby="modal-title"
+  >
+    <div class="modal-dialog diary-card" role="document">
+      <button type="button" class="modal-close-btn" id="modal-close" aria-label="상세 정보 창 닫기">
+        &times;
+      </button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">활동 분류</span>
+        <h3 class="modal-title" id="modal-title">활동 제목</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- 동적으로 주입되는 모달 내용 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="modal-btn-close">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 푸터 (연락처/SNS/외부링크 없음) -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-logo">최하영<span class="highlight">.zip</span></div>
+      <p class="footer-slogan">최하영의 이야기와 취향을 모은 공간</p>
+      <div class="footer-copy">© 2026 최하영. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- 스크립트 로드: content.js 후 script.js -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
